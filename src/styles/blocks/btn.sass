@@ -88,6 +88,7 @@
 
 @media screen and (min-width: 768px)
   .btn
+    padding: 0 32px
     height: 38px
     font-size: 16px
     line-height: 22px
@@ -95,11 +96,38 @@
     &--share
       width: 36px
       height: 36px
+      padding: 12px
 
     &--share .btn__picture
       width: 14px
       min-width: 14px
       height: 11px
 
+    &--subscribe .btn__picture
+      margin-right: 10px
+
     &--margin-right
       margin-right: 32px
+
+@media screen and (min-width: 1200px)
+  .btn
+    height: 52px
+    padding: 0 32px
+    font-size: 20px
+    line-height: 28px
+
+    &--share
+      width: 52px
+      height: 52px
+      padding: 12px
+
+    &--share .btn__picture
+      width: 18px
+      min-width: 18px
+      height: 18px
+
+    &--subscribe .btn__picture
+      width: 20px
+      min-width: 20px
+      height: 20px
+      margin-right: 16px

@@ -233,3 +233,71 @@
       line-height: 22px
       &.user__about-btn--show
         margin-top: 5px
+
+@media screen and (min-width: 1200px)
+  .user
+    display: grid
+    grid-template-columns: repeat(22, 1fr)
+    grid-template-rows: repeat(23, 1fr)
+    max-width: 1008px
+    margin: 64px auto 0 auto
+    padding: 0 15px
+
+    &__requisites
+      display: grid
+      grid-template-columns: repeat(22, 1fr)
+      grid-template-rows: repeat(23, 1fr)
+      grid-column: 1/23
+      grid-row: 1/24
+      z-index: 1
+      height: auto
+      padding: 0
+
+    &__wrapper
+      grid-column: 8/22
+      grid-row: 1/5
+      height: auto
+      min-height: auto
+      padding-left: 30px
+
+    &__avatar
+      position: relative
+      grid-column: 1/8
+      grid-row: 1/20
+      height: 415px
+      max-width: 307px
+
+    &__top
+      display: none
+
+    &__nickname
+      font-size: 28px
+      line-height: 39px
+
+    &__name
+      &.user__name--desktop
+        margin-top: 20px
+
+    &__status
+      display: none
+
+    &__subscribe
+      z-index: 2
+      grid-column: 1/23
+      grid-row: 21/24
+      padding: 0
+    &__subscribe-content
+      padding-top: 12px
+
+    &__about
+      z-index: 2
+      grid-column: 8/23
+      grid-row: 5/20
+      padding: 0
+      padding-left: 32px
+      margin-top: 32px
+
+    &__about-text,
+    &__about-btn
+      font-size: 20px
+      line-height: 28px

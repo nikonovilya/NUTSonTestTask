@@ -39,11 +39,33 @@
 
 @media screen and (min-width: 1200px)
   .profile
+    &__content
+      max-width: 1008px
+      margin: 0 auto
+      padding-top: 64px
+      padding-bottom: 93px
+
+    &__content-title
+      margin-bottom: 48px
+      font-size: 28px
+      line-height: 39px
+
+    &__content-wrapper
+      padding: 0 15px
 
     &__content-list
       &.profile__content-list--tablet
         display: none
       &.profile__content-list--desktop
-        display: block
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
 
+    &__content-item
+      padding: 0
+
+    &__content-item
+      flex-basis: 33.333333%
+      padding-top: 16px
+      padding-inline: 15px
     

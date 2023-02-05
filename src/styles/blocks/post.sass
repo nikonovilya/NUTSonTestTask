@@ -258,8 +258,21 @@
 
 @media screen and (min-width: 1200px)
   .post
+    &__container
+      padding: 0
+      &.post__container--padding-right,
+      &.post__container--padding-mobile
+        padding: 0
+
     &__content
       margin-bottom: 0
+      
+    &__content-wrapper
+      margin-right: 0
+
+    &__content-empty
+      padding-top: 100%
+
     &__header,
     &__actions,
     &__description
