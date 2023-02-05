@@ -12,9 +12,38 @@
     font-size: 20px
     font-weight: 700
     line-height: 28px
-    margin-bottom: 40px
+    margin-bottom: 20px
     color: $color-gray-light
+
+  &__content-list
+    &.profile__content-list--desktop
+      display: none
 
   &__content-item
     padding: 20px 0
     border-bottom: 0.5px solid rgba(242, 242, 242, .3)
+
+@media screen and (min-width: 768px)
+  .profile
+    &__content
+      padding-top: 20px
+
+    &__content-wrapper
+      padding: 0 32px
+
+    &__content-title
+      display: block
+
+    &__content-item
+      border-bottom: none
+
+@media screen and (min-width: 1200px)
+  .profile
+
+    &__content-list
+      &.profile__content-list--tablet
+        display: none
+      &.profile__content-list--desktop
+        display: block
+
+    

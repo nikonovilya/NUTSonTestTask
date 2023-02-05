@@ -37,6 +37,13 @@
     font-weight: 700
     line-height: 17px
     margin-bottom: 4px
+    &.user__name--desktop
+      display: none
+      font-size: 16px
+      font-weight: 500
+      line-height: 22px
+      margin-bottom: 0
+      color: $color-gray-light
 
   &__posts
     font-size: 12px
@@ -62,7 +69,7 @@
     align-items: center
     width: 14px
     height: 14px
-    background: linear-gradient(269.87deg, #1A64BA 0.11%, #093F7E 99.9%)
+    background: $color-secondary-default
     border-radius: 50%
     transform: translateX(calc(100% + 8px))
 
@@ -125,7 +132,7 @@
       right: 0
       bottom: 0
       z-index: 2
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 34.38%, rgba(0, 0, 0, 0.268) 79.69%, rgba(0, 0, 0, 0.4) 100%)
+      background: $color-linear-overlay
 
   &__avatar-img
     position: relative
@@ -143,7 +150,7 @@
     align-items: center
 
   &__about
-    padding: 18px 24px
+    padding: 18px 24px 20px
     background-color: #0D0D0D
     overflow: hidden
 
@@ -177,3 +184,52 @@
       display: block
     &.user__about-btn--inactive
       display: none
+
+@media screen and (min-width: 768px)
+  .user
+    &__requisites
+      height: 69.011vw
+      padding: 44px 32px 32px
+
+    &__info
+      &.user__info--mobile
+        display: none
+
+    &__nickname
+      font-size: 18px
+      line-height: 25px
+
+    &__status
+      top: 50%
+      transform: translate(calc(100% + 8px), -50%)
+
+    &__name
+      &.user__name--desktop
+        margin-top: 8px
+        display: block
+
+    &__id
+      &.user__id--mobile
+        display: none
+
+    &__subscribe
+      padding: 40px 32px 20px
+
+    &__about
+      padding: 20px 32px
+      background-color: transparent
+
+    &__about-info
+      margin-top: -6px
+      &::first-line
+        line-height: 30px
+
+    &__about-text
+      font-size: 16px
+      line-height: 22px
+
+    &__about-btn
+      font-size: 16px
+      line-height: 22px
+      &.user__about-btn--show
+        margin-top: 5px

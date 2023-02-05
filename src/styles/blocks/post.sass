@@ -35,8 +35,8 @@
 
   &__avatar-img
     display: block
-    width: 42px
-    height: 42px
+    width: 100%
+    height: 100%
     object-fit: cover
 
   &__info
@@ -181,4 +181,86 @@
     &.post__description-btn--active
       display: block
     &.post__description-btn--inactive
+      display: none
+
+@media screen and (min-width: 768px)
+  .post
+    &__container
+      padding: 0 30px
+      &.post__container--padding-right
+        padding-right: 30px
+      &.post__container--padding-mobile
+        padding: 0 30px
+
+    &__header
+      margin-bottom: 24px
+      align-items: flex-end
+
+    &__avatar
+      width: 80px
+      min-width: 80px
+      height: 80px
+      margin-right: 14px
+
+    &__nickname
+      margin-bottom: 8px
+      font-size: 16px
+      line-height: 22px
+
+    &__id
+      font-size: 16px
+      line-height: 21px
+
+    &__create
+      min-width: 140px
+      margin-top: 19px
+
+    &__create-text
+      font-size: 16px
+      line-height: 22px
+
+    &__content
+      margin-bottom: 24px
+
+    &__content-wrapper
+      margin-right: 4px
+
+    &__content-empty
+      padding-top: 106.819%
+
+    &__actions
+      margin-bottom: 24px
+
+    &__actions-like
+      margin-right: 32px
+
+    &__actions-btn
+      width: 36px
+      height: 36px
+      &.post__actions-btn--like
+        width: 40px
+        height: 36px
+
+    &__description-info
+      margin-top: -6px
+      &::first-line
+        line-height: 30px
+
+    &__description-text
+      font-size: 16px
+      line-height: 22px
+
+    &__description-btn
+      font-size: 16px
+      line-height: 22px
+      &.user__description-btn--show
+        margin-top: 5px
+
+@media screen and (min-width: 1200px)
+  .post
+    &__content
+      margin-bottom: 0
+    &__header,
+    &__actions,
+    &__description
       display: none
