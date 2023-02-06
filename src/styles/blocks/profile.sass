@@ -3,7 +3,7 @@
 .profile
   position: relative
   z-index: 1
-  
+
   &__wrapper
     display: flex
     justify-content: space-between
@@ -28,6 +28,8 @@
   &__content-list
     &.profile__content-list--desktop
       display: none
+    &.profile__content-list--desktop .post
+      cursor: pointer
 
   &__content-item
     padding: 20px 0

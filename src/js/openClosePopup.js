@@ -11,7 +11,6 @@ function openClosePopup(popupClassName) {
   const openPopupHandler = () => {
     popup.classList.add(`${popupClassName}--active`);
     body.classList.add('overflow-hidden');
-    console.log('click')
   };
   const closePopupHandler = () => {
     popup.classList.remove(`${popupClassName}--active`);
