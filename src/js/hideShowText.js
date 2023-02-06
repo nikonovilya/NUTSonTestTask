@@ -11,7 +11,6 @@ function hideShowText(blockClassName, length) {
     const btnShow = infoBlock.querySelector(`.${blockClassName}-btn--show`);
     const btnHide = infoBlock.querySelector(`.${blockClassName}-btn--hide`);
     const textBlock = infoBlock.querySelector(`.${blockClassName}-text`);
-    console.log(textBlock.textContent.replace(' ', '').length);
     const textBlockStr = textBlock.innerHTML;
 
     const textBlockShortStr = shortString(textBlockStr);

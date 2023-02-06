@@ -1,0 +1,19 @@
+.popup
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 10
+  display: none
+  width: 100vw
+  height: 100vh
+  &.popup--active
+    display: block
+
+  &__overlay
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(28, 26, 26, 0.7)
+    backdrop-filter: blur(10px)
