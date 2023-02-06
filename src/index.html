@@ -12,1647 +12,1767 @@
 
   <body>
     <div class="profile">
-      <div class="comeback profile__comeback">
-        <div class="comeback__container">
-          <div class="comeback__wapper">
-            <a class="comeback__link" href="#">
-              <div class="comeback__picture">
-                <svg class="comeback__img">
-                  <use xlink:href="img/sprite.svg#arrow"></use>
-                </svg>
-              </div>
-              <p class="comeback__text">Вернуться на главную</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="user profile__user">
-        <div class="user__requisites">
-          <div class="user__wrapper">
-            <div class="user__top">
-              <a class="comeback-link user__top-link" href="#">
-                <div class="comeback-link__picture">
-                  <svg class="comeback-link__img">
-                    <use xlink:href="img/sprite.svg#arrow"></use>
-                  </svg>
+      <div class="profile__wrapper">
+        <aside class="sidebar profile__sidebar">
+          <div class="sidebar__container">
+            <div class="sidebar__wrapper">
+              <div class="sidebar__user">
+                <div class="sidebar__user-avatar">
+                  <picture class="sidebar__user-picture">
+                    <source
+                      srcset="
+                        ./img/random-user@1x.avif 1x,
+                        ./img/random-user@2x.avif 2x
+                      "
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./img/random-user@1x.webp 1x,
+                        ./img/random-user@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="sidebar__user-img"
+                      src="./img/random-user@1x.jpg"
+                      srcset="./img/random-user@2x.jpg 2x"
+                      alt="User avatar"
+                    />
+                  </picture>
                 </div>
-              </a>
-              <div class="user__info user__info--mobile">
-                <h2 class="user__name">Иванов Иван</h2>
-                <p class="user__posts">
-                  <span class="user__posts-count">9</span>
-                  <span class="user__posts-text">Постов</span>
-                </p>
               </div>
-              <div class="user__menu">
-                <button class="user__menu-btn">
-                  <svg class="user__menu-img">
-                    <use xlink:href="img/sprite.svg#points"></use>
-                  </svg>
+              <nav class="sidebar__nav">
+                <div class="sidebar__nav-list">
+                  <div class="sidebar__nav-row">
+                    <div class="sidebar__nav-item">
+                      <button class="sidebar__nav-btn">
+                        <div class="sidebar__nav-picture">
+                          <svg class="sidebar__nav-img">
+                            <use xlink:href="img/sprite.svg#login"></use>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="sidebar__nav-row">
+                    <div class="sidebar__nav-item">
+                      <button class="sidebar__nav-btn">
+                        <div class="sidebar__nav-picture">
+                          <svg class="sidebar__nav-img">
+                            <use xlink:href="img/sprite.svg#card"></use>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="sidebar__nav-item">
+                      <button class="sidebar__nav-btn">
+                        <div class="sidebar__nav-picture">
+                          <svg class="sidebar__nav-img sidebar__nav-img--notes">
+                            <use xlink:href="img/sprite.svg#notes"></use>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="sidebar__nav-item">
+                      <button class="sidebar__nav-btn">
+                        <div class="sidebar__nav-picture">
+                          <svg class="sidebar__nav-img">
+                            <use xlink:href="img/sprite.svg#cash"></use>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="sidebar__nav-row">
+                    <div class="sidebar__nav-item">
+                      <button class="sidebar__nav-btn">
+                        <div class="sidebar__nav-picture">
+                          <svg class="sidebar__nav-img">
+                            <use xlink:href="img/sprite.svg#nav-share"></use>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="sidebar__nav-item">
+                      <button class="sidebar__nav-btn">
+                        <div class="sidebar__nav-picture">
+                          <svg class="sidebar__nav-img sidebar__nav-img--theme">
+                            <use xlink:href="img/sprite.svg#theme"></use>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="sidebar__nav-item">
+                      <button class="sidebar__nav-btn">
+                        <div class="sidebar__nav-picture">
+                          <svg class="sidebar__nav-img">
+                            <use xlink:href="img/sprite.svg#lang"></use>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="sidebar__nav-row">
+                    <div class="sidebar__nav-item">
+                      <button class="sidebar__nav-btn">
+                        <div class="sidebar__nav-picture">
+                          <svg class="sidebar__nav-img">
+                            <use xlink:href="img/sprite.svg#off"></use>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </aside>
+        <div class="profile__main">
+          <div class="comeback profile__comeback">
+            <div class="comeback__container">
+              <div class="comeback__wapper">
+                <a class="comeback__link" href="#">
+                  <div class="comeback__picture">
+                    <svg class="comeback__img">
+                      <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                  <p class="comeback__text">Вернуться на главную</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="user profile__user">
+            <div class="user__requisites">
+              <div class="user__wrapper">
+                <div class="user__top">
+                  <a class="comeback-link user__top-link" href="#">
+                    <div class="comeback-link__picture">
+                      <svg class="comeback-link__img">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <div class="user__info user__info--mobile">
+                    <h2 class="user__name">Иванов Иван</h2>
+                    <p class="user__posts">
+                      <span class="user__posts-count">9</span>
+                      <span class="user__posts-text">Постов</span>
+                    </p>
+                  </div>
+                  <div class="user__menu">
+                    <button class="user__menu-btn">
+                      <svg class="user__menu-img">
+                        <use xlink:href="img/sprite.svg#points"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="user__bottom">
+                  <div class="user__info">
+                    <div class="user__info-wrapper">
+                      <h3 class="user__nickname">CheliksRandom</h3>
+                      <div class="user__status">
+                        <svg class="user__status-img">
+                          <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="user__id user__id--mobile">@kakyto_chel</p>
+                    <h2 class="user__name user__name--desktop">Иванов Иван</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="user__avatar">
+                <div class="user__avatar-empty"></div>
+                <picture class="user__avatar-picture">
+                  <source
+                    srcset="
+                      ./img/profile-avatar@1x.avif 1x,
+                      ./img/profile-avatar@2x.avif 2x
+                    "
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./img/profile-avatar@1x.webp 1x,
+                      ./img/profile-avatar@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="user__avatar-img"
+                    src="./img/profile-avatar@1x.jpg"
+                    srcset="./img/profile-avatar@2x.jpg 2x"
+                    alt="User avatar"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="user__subscribe">
+              <div class="user__subscribe-content">
+                <button
+                  class="btn user__subscribe-btn btn--primary btn--subscribe btn--margin-right"
+                >
+                  <div class="btn__picture">
+                    <svg class="btn__img">
+                      <use xlink:href="img/sprite.svg#dollar"></use>
+                    </svg>
+                  </div>
+                  <span class="btn__text">
+                    Оформить&nbsp;подписку&nbsp;за&nbsp;
+                  </span>
+                  <span class="btn__count btn__count--price">59.99</span>
+                </button>
+                <button class="btn user__subscribe-btn btn--primary btn--share">
+                  <div class="btn__picture">
+                    <svg class="btn__img">
+                      <use xlink:href="img/sprite.svg#share"></use>
+                    </svg>
+                  </div>
                 </button>
               </div>
             </div>
-            <div class="user__bottom">
-              <div class="user__info">
-                <div class="user__info-wrapper">
-                  <h3 class="user__nickname">CheliksRandom</h3>
-                  <div class="user__status">
-                    <svg class="user__status-img">
-                      <use xlink:href="img/sprite.svg#check"></use>
-                    </svg>
-                  </div>
+            <div class="user__about">
+              <div class="user__about-content">
+                <div class="user__about-info">
+                  <p class="user__about-text">
+                    Привет всем! <br />Являясь всего лишь частью общей картины,
+                    действия представителей оппозиции лишь добавляют фракционных
+                    разногласий и объективно рассмотрены соответствующими
+                    инстанциями. <br />Прежде всего, новая модель
+                    организационной деятельности представляет собой интересный
+                    эксперимент проверки модели развития.
+                  </p>
+                  <button class="user__about-btn user__about-btn--hide">
+                    Свернуть
+                  </button>
                 </div>
-                <p class="user__id user__id--mobile">@kakyto_chel</p>
-                <h2 class="user__name user__name--desktop">Иванов Иван</h2>
+                <button class="user__about-btn user__about-btn--show">
+                  Читать далее
+                </button>
               </div>
             </div>
           </div>
-          <div class="user__avatar">
-            <div class="user__avatar-empty"></div>
-            <picture class="user__avatar-picture">
-              <source
-                srcset="
-                  ./img/profile-avatar@1x.avif 1x,
-                  ./img/profile-avatar@2x.avif 2x
-                "
-                type="image/avif"
-              />
-              <source
-                srcset="
-                  ./img/profile-avatar@1x.webp 1x,
-                  ./img/profile-avatar@2x.webp 2x
-                "
-                type="image/webp"
-              />
-              <img
-                class="user__avatar-img"
-                src="./img/profile-avatar@1x.jpg"
-                srcset="./img/profile-avatar@2x.jpg 2x"
-                alt="User avatar"
-              />
-            </picture>
+          <div class="profile__content">
+            <div class="profile__content-wrapper">
+              <h4 class="profile__content-title">Лента пользователя</h4>
+            </div>
+            <ul class="profile__content-list profile__content-list--tablet">
+              <li class="profile__content-item">
+                <div class="post profile__content-post">
+                  <div class="post__container post__container--padding-right">
+                    <div class="post__header">
+                      <div class="post__header-left">
+                        <picture class="post__avatar">
+                          <source
+                            srcset="
+                              ./img/random-user@1x.avif 1x,
+                              ./img/random-user@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/random-user@1x.webp 1x,
+                              ./img/random-user@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__avatar-img"
+                            src="./img/random-user@1x.jpg"
+                            srcset="./img/random-user@2x.jpg 2x"
+                            alt="Image description"
+                          />
+                        </picture>
+                        <div class="post__info">
+                          <h2 class="post__nickname">Чел с рандомным ником</h2>
+                          <p class="post__id">@kakyto_chel</p>
+                        </div>
+                      </div>
+                      <div class="post__header-right">
+                        <div class="post__menu">
+                          <button class="post__menu-btn">
+                            <svg class="post__menu-img">
+                              <use xlink:href="img/sprite.svg#points"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="post__create">
+                          <p class="post__create-text">
+                            <span class="post__create-day">Вчера</span>&nbsp;
+                            <span class="post__create-time">21:05</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container post__container--padding-mobile">
+                    <div class="post__content">
+                      <div class="post__content-wrapper">
+                        <div class="post__content-empty"></div>
+                        <picture class="post__content-picture">
+                          <source
+                            srcset="
+                              ./img/random-user@1x.avif 1x,
+                              ./img/random-user@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/random-user@1x.webp 1x,
+                              ./img/random-user@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__content-img"
+                            src="./img/random-user@1x.jpg"
+                            srcset="./img/random-user@2x.jpg 2x"
+                            alt="Image description"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__actions">
+                      <div class="post__actions-like">
+                        <button
+                          class="post__actions-btn post__actions-btn--like"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--like"
+                          >
+                            <use xlink:href="img/sprite.svg#like-active"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="post__actions-share">
+                        <a
+                          class="post__actions-btn post__actions-btn--share"
+                          href="#"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--share"
+                          >
+                            <use xlink:href="img/sprite.svg#share-right"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__description">
+                      <div class="post__description-content">
+                        <div class="post__description-info">
+                          <p class="post__description-text">
+                            Привет всем! <br />Являясь всего лишь частью общей
+                            картины, действия представителей оппозиции лишь
+                            добавляют фракционных разногласий и объективно
+                            рассмотрены соответствующими инстанциями.
+                            <br />Прежде всего, новая модель организационной
+                            деятельности представляет собой интересный
+                            эксперимент проверки модели развития. Современные
+                            технологии достигли такого уровня, что граница
+                            обучения кадров представляет собой интересный
+                            эксперимент проверки кластеризации усилий.
+                          </p>
+                          <button
+                            class="post__description-btn post__description-btn--hide"
+                          >
+                            Свернуть
+                          </button>
+                        </div>
+                        <button
+                          class="post__description-btn post__description-btn--show"
+                        >
+                          Читать далее
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="profile__content-item">
+                <div class="post profile__content-post">
+                  <div class="post__container post__container--padding-right">
+                    <div class="post__header">
+                      <div class="post__header-left">
+                        <picture class="post__avatar">
+                          <source
+                            srcset="
+                              ./img/random-user@1x.avif 1x,
+                              ./img/random-user@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/random-user@1x.webp 1x,
+                              ./img/random-user@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__avatar-img"
+                            src="./img/random-user@1x.jpg"
+                            srcset="./img/random-user@2x.jpg 2x"
+                            alt="User avatar"
+                          />
+                        </picture>
+                        <div class="post__info">
+                          <h2 class="post__nickname">Чел с рандомным ником</h2>
+                          <p class="post__id">@kakyto_chel</p>
+                        </div>
+                      </div>
+                      <div class="post__header-right">
+                        <div class="post__menu">
+                          <button class="post__menu-btn">
+                            <svg class="post__menu-img">
+                              <use xlink:href="img/sprite.svg#points"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="post__create">
+                          <p class="post__create-text">
+                            <span class="post__create-day">Вчера</span>&nbsp;
+                            <span class="post__create-time">21:05</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container post__container--padding-mobile">
+                    <div class="post__content">
+                      <div class="post__content-wrapper">
+                        <div class="post__content-empty"></div>
+                        <picture class="post__content-picture">
+                          <source
+                            srcset="
+                              ./img/random-user@1x.avif 1x,
+                              ./img/random-user@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/random-user@1x.webp 1x,
+                              ./img/random-user@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__content-img"
+                            src="./img/random-user@1x.jpg"
+                            srcset="./img/random-user@2x.jpg 2x"
+                            alt="Image description"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__actions">
+                      <div class="post__actions-like">
+                        <button
+                          class="post__actions-btn post__actions-btn--like"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--like"
+                          >
+                            <use xlink:href="img/sprite.svg#like-active"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="post__actions-share">
+                        <a
+                          class="post__actions-btn post__actions-btn--share"
+                          href="#"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--share"
+                          >
+                            <use xlink:href="img/sprite.svg#share-right"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__description">
+                      <div class="post__description-content">
+                        <div class="post__description-info">
+                          <p class="post__description-text">
+                            Привет всем! <br />Являясь всего лишь частью общей
+                            картины, действия представителей оппозиции лишь
+                            добавляют фракционных разногласий и объективно
+                            рассмотрены соответствующими инстанциями.
+                            <br />Прежде всего, новая модель организационной
+                            деятельности представляет собой интересный
+                            эксперимент проверки модели развития. Современные
+                            технологии достигли такого уровня, что граница
+                            обучения кадров представляет собой интересный
+                            эксперимент проверки кластеризации усилий.
+                          </p>
+                          <button
+                            class="post__description-btn post__description-btn--hide"
+                          >
+                            Свернуть
+                          </button>
+                        </div>
+                        <button
+                          class="post__description-btn post__description-btn--show"
+                        >
+                          Читать далее
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="profile__content-list profile__content-list--desktop">
+              <li class="profile__content-item">
+                <div class="post profile__content-post">
+                  <div class="post__container post__container--padding-right">
+                    <div class="post__header">
+                      <div class="post__header-left">
+                        <picture class="post__avatar">
+                          <source
+                            srcset="
+                              ./img/random-user@1x.avif 1x,
+                              ./img/random-user@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/random-user@1x.webp 1x,
+                              ./img/random-user@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__avatar-img"
+                            src="./img/random-user@1x.jpg"
+                            srcset="./img/random-user@2x.jpg 2x"
+                            alt="User avatar"
+                          />
+                        </picture>
+                        <div class="post__info">
+                          <h2 class="post__nickname">Чел с рандомным ником</h2>
+                          <p class="post__id">@kakyto_chel</p>
+                        </div>
+                      </div>
+                      <div class="post__header-right">
+                        <div class="post__menu">
+                          <button class="post__menu-btn">
+                            <svg class="post__menu-img">
+                              <use xlink:href="img/sprite.svg#points"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="post__create">
+                          <p class="post__create-text">
+                            <span class="post__create-day">Вчера</span>&nbsp;
+                            <span class="post__create-time">21:05</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container post__container--padding-mobile">
+                    <div class="post__content">
+                      <div class="post__content-wrapper">
+                        <div class="post__content-empty"></div>
+                        <picture class="post__content-picture">
+                          <source
+                            srcset="
+                              ./img/profile-avatar@1x.avif 1x,
+                              ./img/profile-avatar@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/profile-avatar@1x.webp 1x,
+                              ./img/profile-avatar@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__content-img"
+                            src="./img/profile-avatar@1x.jpg"
+                            srcset="./img/profile-avatar@2x.jpg 2x"
+                            alt="Image description"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__actions">
+                      <div class="post__actions-like">
+                        <button
+                          class="post__actions-btn post__actions-btn--like"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--like"
+                          >
+                            <use xlink:href="img/sprite.svg#like-active"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="post__actions-share">
+                        <a
+                          class="post__actions-btn post__actions-btn--share"
+                          href="#"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--share"
+                          >
+                            <use xlink:href="img/sprite.svg#share-right"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__description">
+                      <div class="post__description-content">
+                        <div class="post__description-info">
+                          <p class="post__description-text">
+                            Привет всем! <br />Являясь всего лишь частью общей
+                            картины, действия представителей оппозиции лишь
+                            добавляют фракционных разногласий и объективно
+                            рассмотрены соответствующими инстанциями.
+                            <br />Прежде всего, новая модель организационной
+                            деятельности представляет собой интересный
+                            эксперимент проверки модели развития. Современные
+                            технологии достигли такого уровня, что граница
+                            обучения кадров представляет собой интересный
+                            эксперимент проверки кластеризации усилий.
+                          </p>
+                          <button
+                            class="post__description-btn post__description-btn--hide"
+                          >
+                            Свернуть
+                          </button>
+                        </div>
+                        <button
+                          class="post__description-btn post__description-btn--show"
+                        >
+                          Читать далее
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="profile__content-item">
+                <div class="post profile__content-post">
+                  <div class="post__container post__container--padding-right">
+                    <div class="post__header">
+                      <div class="post__header-left">
+                        <picture class="post__avatar">
+                          <source
+                            srcset="
+                              ./img/random-user@1x.avif 1x,
+                              ./img/random-user@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/random-user@1x.webp 1x,
+                              ./img/random-user@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__avatar-img"
+                            src="./img/random-user@1x.jpg"
+                            srcset="./img/random-user@2x.jpg 2x"
+                            alt="User avatar"
+                          />
+                        </picture>
+                        <div class="post__info">
+                          <h2 class="post__nickname">Чел с рандомным ником</h2>
+                          <p class="post__id">@kakyto_chel</p>
+                        </div>
+                      </div>
+                      <div class="post__header-right">
+                        <div class="post__menu">
+                          <button class="post__menu-btn">
+                            <svg class="post__menu-img">
+                              <use xlink:href="img/sprite.svg#points"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="post__create">
+                          <p class="post__create-text">
+                            <span class="post__create-day">Вчера</span>&nbsp;
+                            <span class="post__create-time">21:05</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container post__container--padding-mobile">
+                    <div class="post__content">
+                      <div class="post__content-wrapper">
+                        <div class="post__content-empty"></div>
+                        <picture class="post__content-picture">
+                          <source
+                            srcset="
+                              ./img/profile-photo-01@1x.avif 1x,
+                              ./img/profile-photo-01@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/profile-photo-01@1x.webp 1x,
+                              ./img/profile-photo-01@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__content-img"
+                            src="./img/profile-photo-01@1x.jpg"
+                            srcset="./img/profile-photo-01@2x.jpg 2x"
+                            alt="Image description"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__actions">
+                      <div class="post__actions-like">
+                        <button
+                          class="post__actions-btn post__actions-btn--like"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--like"
+                          >
+                            <use xlink:href="img/sprite.svg#like-active"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="post__actions-share">
+                        <a
+                          class="post__actions-btn post__actions-btn--share"
+                          href="#"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--share"
+                          >
+                            <use xlink:href="img/sprite.svg#share-right"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__description">
+                      <div class="post__description-content">
+                        <div class="post__description-info">
+                          <p class="post__description-text">
+                            Привет всем! <br />Являясь всего лишь частью общей
+                            картины, действия представителей оппозиции лишь
+                            добавляют фракционных разногласий и объективно
+                            рассмотрены соответствующими инстанциями.
+                            <br />Прежде всего, новая модель организационной
+                            деятельности представляет собой интересный
+                            эксперимент проверки модели развития. Современные
+                            технологии достигли такого уровня, что граница
+                            обучения кадров представляет собой интересный
+                            эксперимент проверки кластеризации усилий.
+                          </p>
+                          <button
+                            class="post__description-btn post__description-btn--hide"
+                          >
+                            Свернуть
+                          </button>
+                        </div>
+                        <button
+                          class="post__description-btn post__description-btn--show"
+                        >
+                          Читать далее
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="profile__content-item">
+                <div class="post profile__content-post">
+                  <div class="post__container post__container--padding-right">
+                    <div class="post__header">
+                      <div class="post__header-left">
+                        <picture class="post__avatar">
+                          <source
+                            srcset="
+                              ./img/random-user@1x.avif 1x,
+                              ./img/random-user@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/random-user@1x.webp 1x,
+                              ./img/random-user@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__avatar-img"
+                            src="./img/random-user@1x.jpg"
+                            srcset="./img/random-user@2x.jpg 2x"
+                            alt="User avatar"
+                          />
+                        </picture>
+                        <div class="post__info">
+                          <h2 class="post__nickname">Чел с рандомным ником</h2>
+                          <p class="post__id">@kakyto_chel</p>
+                        </div>
+                      </div>
+                      <div class="post__header-right">
+                        <div class="post__menu">
+                          <button class="post__menu-btn">
+                            <svg class="post__menu-img">
+                              <use xlink:href="img/sprite.svg#points"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="post__create">
+                          <p class="post__create-text">
+                            <span class="post__create-day">Вчера</span>&nbsp;
+                            <span class="post__create-time">21:05</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container post__container--padding-mobile">
+                    <div class="post__content">
+                      <div class="post__content-wrapper">
+                        <div class="post__content-empty"></div>
+                        <picture class="post__content-picture">
+                          <source
+                            srcset="
+                              ./img/profile-photo-02@1x.avif 1x,
+                              ./img/profile-photo-02@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/profile-photo-02@1x.webp 1x,
+                              ./img/profile-photo-02@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__content-img"
+                            src="./img/profile-photo-02@1x.jpg"
+                            srcset="./img/profile-photo-02@2x.jpg 2x"
+                            alt="Image description"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__actions">
+                      <div class="post__actions-like">
+                        <button
+                          class="post__actions-btn post__actions-btn--like"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--like"
+                          >
+                            <use xlink:href="img/sprite.svg#like-active"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="post__actions-share">
+                        <a
+                          class="post__actions-btn post__actions-btn--share"
+                          href="#"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--share"
+                          >
+                            <use xlink:href="img/sprite.svg#share-right"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__description">
+                      <div class="post__description-content">
+                        <div class="post__description-info">
+                          <p class="post__description-text">
+                            Привет всем! <br />Являясь всего лишь частью общей
+                            картины, действия представителей оппозиции лишь
+                            добавляют фракционных разногласий и объективно
+                            рассмотрены соответствующими инстанциями.
+                            <br />Прежде всего, новая модель организационной
+                            деятельности представляет собой интересный
+                            эксперимент проверки модели развития. Современные
+                            технологии достигли такого уровня, что граница
+                            обучения кадров представляет собой интересный
+                            эксперимент проверки кластеризации усилий.
+                          </p>
+                          <button
+                            class="post__description-btn post__description-btn--hide"
+                          >
+                            Свернуть
+                          </button>
+                        </div>
+                        <button
+                          class="post__description-btn post__description-btn--show"
+                        >
+                          Читать далее
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="profile__content-item">
+                <div class="post profile__content-post">
+                  <div class="post__container post__container--padding-right">
+                    <div class="post__header">
+                      <div class="post__header-left">
+                        <picture class="post__avatar">
+                          <source
+                            srcset="
+                              ./img/random-user@1x.avif 1x,
+                              ./img/random-user@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/random-user@1x.webp 1x,
+                              ./img/random-user@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__avatar-img"
+                            src="./img/random-user@1x.jpg"
+                            srcset="./img/random-user@2x.jpg 2x"
+                            alt="User avatar"
+                          />
+                        </picture>
+                        <div class="post__info">
+                          <h2 class="post__nickname">Чел с рандомным ником</h2>
+                          <p class="post__id">@kakyto_chel</p>
+                        </div>
+                      </div>
+                      <div class="post__header-right">
+                        <div class="post__menu">
+                          <button class="post__menu-btn">
+                            <svg class="post__menu-img">
+                              <use xlink:href="img/sprite.svg#points"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="post__create">
+                          <p class="post__create-text">
+                            <span class="post__create-day">Вчера</span>&nbsp;
+                            <span class="post__create-time">21:05</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container post__container--padding-mobile">
+                    <div class="post__content">
+                      <div class="post__content-wrapper">
+                        <div class="post__content-empty"></div>
+                        <picture class="post__content-picture">
+                          <source
+                            srcset="
+                              ./img/profile-photo-03@1x.avif 1x,
+                              ./img/profile-photo-03@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/profile-photo-03@1x.webp 1x,
+                              ./img/profile-photo-03@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__content-img"
+                            src="./img/profile-photo-03@1x.jpg"
+                            srcset="./img/profile-photo-03@2x.jpg 2x"
+                            alt="Image description"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__actions">
+                      <div class="post__actions-like">
+                        <button
+                          class="post__actions-btn post__actions-btn--like"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--like"
+                          >
+                            <use xlink:href="img/sprite.svg#like-active"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="post__actions-share">
+                        <a
+                          class="post__actions-btn post__actions-btn--share"
+                          href="#"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--share"
+                          >
+                            <use xlink:href="img/sprite.svg#share-right"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__description">
+                      <div class="post__description-content">
+                        <div class="post__description-info">
+                          <p class="post__description-text">
+                            Привет всем! <br />Являясь всего лишь частью общей
+                            картины, действия представителей оппозиции лишь
+                            добавляют фракционных разногласий и объективно
+                            рассмотрены соответствующими инстанциями.
+                            <br />Прежде всего, новая модель организационной
+                            деятельности представляет собой интересный
+                            эксперимент проверки модели развития. Современные
+                            технологии достигли такого уровня, что граница
+                            обучения кадров представляет собой интересный
+                            эксперимент проверки кластеризации усилий.
+                          </p>
+                          <button
+                            class="post__description-btn post__description-btn--hide"
+                          >
+                            Свернуть
+                          </button>
+                        </div>
+                        <button
+                          class="post__description-btn post__description-btn--show"
+                        >
+                          Читать далее
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="profile__content-item">
+                <div class="post profile__content-post">
+                  <div class="post__container post__container--padding-right">
+                    <div class="post__header">
+                      <div class="post__header-left">
+                        <picture class="post__avatar">
+                          <source
+                            srcset="
+                              ./img/random-user@1x.avif 1x,
+                              ./img/random-user@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/random-user@1x.webp 1x,
+                              ./img/random-user@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__avatar-img"
+                            src="./img/random-user@1x.jpg"
+                            srcset="./img/random-user@2x.jpg 2x"
+                            alt="User avatar"
+                          />
+                        </picture>
+                        <div class="post__info">
+                          <h2 class="post__nickname">Чел с рандомным ником</h2>
+                          <p class="post__id">@kakyto_chel</p>
+                        </div>
+                      </div>
+                      <div class="post__header-right">
+                        <div class="post__menu">
+                          <button class="post__menu-btn">
+                            <svg class="post__menu-img">
+                              <use xlink:href="img/sprite.svg#points"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="post__create">
+                          <p class="post__create-text">
+                            <span class="post__create-day">Вчера</span>&nbsp;
+                            <span class="post__create-time">21:05</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container post__container--padding-mobile">
+                    <div class="post__content">
+                      <div class="post__content-wrapper">
+                        <div class="post__content-empty"></div>
+                        <picture class="post__content-picture">
+                          <source
+                            srcset="
+                              ./img/profile-photo-04@1x.avif 1x,
+                              ./img/profile-photo-04@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/profile-photo-04@1x.webp 1x,
+                              ./img/profile-photo-04@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__content-img"
+                            src="./img/profile-photo-04@1x.jpg"
+                            srcset="./img/profile-photo-04@2x.jpg 2x"
+                            alt="Image description"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__actions">
+                      <div class="post__actions-like">
+                        <button
+                          class="post__actions-btn post__actions-btn--like"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--like"
+                          >
+                            <use xlink:href="img/sprite.svg#like-active"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="post__actions-share">
+                        <a
+                          class="post__actions-btn post__actions-btn--share"
+                          href="#"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--share"
+                          >
+                            <use xlink:href="img/sprite.svg#share-right"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__description">
+                      <div class="post__description-content">
+                        <div class="post__description-info">
+                          <p class="post__description-text">
+                            Привет всем! <br />Являясь всего лишь частью общей
+                            картины, действия представителей оппозиции лишь
+                            добавляют фракционных разногласий и объективно
+                            рассмотрены соответствующими инстанциями.
+                            <br />Прежде всего, новая модель организационной
+                            деятельности представляет собой интересный
+                            эксперимент проверки модели развития. Современные
+                            технологии достигли такого уровня, что граница
+                            обучения кадров представляет собой интересный
+                            эксперимент проверки кластеризации усилий.
+                          </p>
+                          <button
+                            class="post__description-btn post__description-btn--hide"
+                          >
+                            Свернуть
+                          </button>
+                        </div>
+                        <button
+                          class="post__description-btn post__description-btn--show"
+                        >
+                          Читать далее
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="profile__content-item">
+                <div class="post profile__content-post">
+                  <div class="post__container post__container--padding-right">
+                    <div class="post__header">
+                      <div class="post__header-left">
+                        <picture class="post__avatar">
+                          <source
+                            srcset="
+                              ./img/random-user@1x.avif 1x,
+                              ./img/random-user@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/random-user@1x.webp 1x,
+                              ./img/random-user@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__avatar-img"
+                            src="./img/random-user@1x.jpg"
+                            srcset="./img/random-user@2x.jpg 2x"
+                            alt="User avatar"
+                          />
+                        </picture>
+                        <div class="post__info">
+                          <h2 class="post__nickname">Чел с рандомным ником</h2>
+                          <p class="post__id">@kakyto_chel</p>
+                        </div>
+                      </div>
+                      <div class="post__header-right">
+                        <div class="post__menu">
+                          <button class="post__menu-btn">
+                            <svg class="post__menu-img">
+                              <use xlink:href="img/sprite.svg#points"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="post__create">
+                          <p class="post__create-text">
+                            <span class="post__create-day">Вчера</span>&nbsp;
+                            <span class="post__create-time">21:05</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container post__container--padding-mobile">
+                    <div class="post__content">
+                      <div class="post__content-wrapper">
+                        <div class="post__content-empty"></div>
+                        <picture class="post__content-picture">
+                          <source
+                            srcset="
+                              ./img/profile-photo-05@1x.avif 1x,
+                              ./img/profile-photo-05@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/profile-photo-05@1x.webp 1x,
+                              ./img/profile-photo-05@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__content-img"
+                            src="./img/profile-photo-05@1x.jpg"
+                            srcset="./img/profile-photo-05@2x.jpg 2x"
+                            alt="Image description"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__actions">
+                      <div class="post__actions-like">
+                        <button
+                          class="post__actions-btn post__actions-btn--like"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--like"
+                          >
+                            <use xlink:href="img/sprite.svg#like-active"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="post__actions-share">
+                        <a
+                          class="post__actions-btn post__actions-btn--share"
+                          href="#"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--share"
+                          >
+                            <use xlink:href="img/sprite.svg#share-right"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__description">
+                      <div class="post__description-content">
+                        <div class="post__description-info">
+                          <p class="post__description-text">
+                            Привет всем! <br />Являясь всего лишь частью общей
+                            картины, действия представителей оппозиции лишь
+                            добавляют фракционных разногласий и объективно
+                            рассмотрены соответствующими инстанциями.
+                            <br />Прежде всего, новая модель организационной
+                            деятельности представляет собой интересный
+                            эксперимент проверки модели развития. Современные
+                            технологии достигли такого уровня, что граница
+                            обучения кадров представляет собой интересный
+                            эксперимент проверки кластеризации усилий.
+                          </p>
+                          <button
+                            class="post__description-btn post__description-btn--hide"
+                          >
+                            Свернуть
+                          </button>
+                        </div>
+                        <button
+                          class="post__description-btn post__description-btn--show"
+                        >
+                          Читать далее
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="profile__content-item">
+                <div class="post profile__content-post">
+                  <div class="post__container post__container--padding-right">
+                    <div class="post__header">
+                      <div class="post__header-left">
+                        <picture class="post__avatar">
+                          <source
+                            srcset="
+                              ./img/random-user@1x.avif 1x,
+                              ./img/random-user@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/random-user@1x.webp 1x,
+                              ./img/random-user@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__avatar-img"
+                            src="./img/random-user@1x.jpg"
+                            srcset="./img/random-user@2x.jpg 2x"
+                            alt="User avatar"
+                          />
+                        </picture>
+                        <div class="post__info">
+                          <h2 class="post__nickname">Чел с рандомным ником</h2>
+                          <p class="post__id">@kakyto_chel</p>
+                        </div>
+                      </div>
+                      <div class="post__header-right">
+                        <div class="post__menu">
+                          <button class="post__menu-btn">
+                            <svg class="post__menu-img">
+                              <use xlink:href="img/sprite.svg#points"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="post__create">
+                          <p class="post__create-text">
+                            <span class="post__create-day">Вчера</span>&nbsp;
+                            <span class="post__create-time">21:05</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container post__container--padding-mobile">
+                    <div class="post__content">
+                      <div class="post__content-wrapper">
+                        <div class="post__content-empty"></div>
+                        <picture class="post__content-picture">
+                          <source
+                            srcset="
+                              ./img/profile-photo-06@1x.avif 1x,
+                              ./img/profile-photo-06@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/profile-photo-06@1x.webp 1x,
+                              ./img/profile-photo-06@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__content-img"
+                            src="./img/profile-photo-06@1x.jpg"
+                            srcset="./img/profile-photo-06@2x.jpg 2x"
+                            alt="User avatar"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__actions">
+                      <div class="post__actions-like">
+                        <button
+                          class="post__actions-btn post__actions-btn--like"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--like"
+                          >
+                            <use xlink:href="img/sprite.svg#like-active"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="post__actions-share">
+                        <a
+                          class="post__actions-btn post__actions-btn--share"
+                          href="#"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--share"
+                          >
+                            <use xlink:href="img/sprite.svg#share-right"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__description">
+                      <div class="post__description-content">
+                        <div class="post__description-info">
+                          <p class="post__description-text">
+                            Привет всем! <br />Являясь всего лишь частью общей
+                            картины, действия представителей оппозиции лишь
+                            добавляют фракционных разногласий и объективно
+                            рассмотрены соответствующими инстанциями.
+                            <br />Прежде всего, новая модель организационной
+                            деятельности представляет собой интересный
+                            эксперимент проверки модели развития. Современные
+                            технологии достигли такого уровня, что граница
+                            обучения кадров представляет собой интересный
+                            эксперимент проверки кластеризации усилий.
+                          </p>
+                          <button
+                            class="post__description-btn post__description-btn--hide"
+                          >
+                            Свернуть
+                          </button>
+                        </div>
+                        <button
+                          class="post__description-btn post__description-btn--show"
+                        >
+                          Читать далее
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="profile__content-item">
+                <div class="post profile__content-post">
+                  <div class="post__container post__container--padding-right">
+                    <div class="post__header">
+                      <div class="post__header-left">
+                        <picture class="post__avatar">
+                          <source
+                            srcset="
+                              ./img/random-user@1x.avif 1x,
+                              ./img/random-user@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/random-user@1x.webp 1x,
+                              ./img/random-user@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__avatar-img"
+                            src="./img/random-user@1x.jpg"
+                            srcset="./img/random-user@2x.jpg 2x"
+                            alt="User avatar"
+                          />
+                        </picture>
+                        <div class="post__info">
+                          <h2 class="post__nickname">Чел с рандомным ником</h2>
+                          <p class="post__id">@kakyto_chel</p>
+                        </div>
+                      </div>
+                      <div class="post__header-right">
+                        <div class="post__menu">
+                          <button class="post__menu-btn">
+                            <svg class="post__menu-img">
+                              <use xlink:href="img/sprite.svg#points"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="post__create">
+                          <p class="post__create-text">
+                            <span class="post__create-day">Вчера</span>&nbsp;
+                            <span class="post__create-time">21:05</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container post__container--padding-mobile">
+                    <div class="post__content">
+                      <div class="post__content-wrapper">
+                        <div class="post__content-empty"></div>
+                        <picture class="post__content-picture">
+                          <source
+                            srcset="
+                              ./img/profile-photo-07@1x.avif 1x,
+                              ./img/profile-photo-07@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/profile-photo-07@1x.webp 1x,
+                              ./img/profile-photo-07@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__content-img"
+                            src="./img/profile-photo-07@1x.jpg"
+                            srcset="./img/profile-photo-07@2x.jpg 2x"
+                            alt="Image description"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__actions">
+                      <div class="post__actions-like">
+                        <button
+                          class="post__actions-btn post__actions-btn--like"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--like"
+                          >
+                            <use xlink:href="img/sprite.svg#like-active"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="post__actions-share">
+                        <a
+                          class="post__actions-btn post__actions-btn--share"
+                          href="#"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--share"
+                          >
+                            <use xlink:href="img/sprite.svg#share-right"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__description">
+                      <div class="post__description-content">
+                        <div class="post__description-info">
+                          <p class="post__description-text">
+                            Привет всем! <br />Являясь всего лишь частью общей
+                            картины, действия представителей оппозиции лишь
+                            добавляют фракционных разногласий и объективно
+                            рассмотрены соответствующими инстанциями.
+                            <br />Прежде всего, новая модель организационной
+                            деятельности представляет собой интересный
+                            эксперимент проверки модели развития. Современные
+                            технологии достигли такого уровня, что граница
+                            обучения кадров представляет собой интересный
+                            эксперимент проверки кластеризации усилий.
+                          </p>
+                          <button
+                            class="post__description-btn post__description-btn--hide"
+                          >
+                            Свернуть
+                          </button>
+                        </div>
+                        <button
+                          class="post__description-btn post__description-btn--show"
+                        >
+                          Читать далее
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="profile__content-item">
+                <div class="post profile__content-post">
+                  <div class="post__container post__container--padding-right">
+                    <div class="post__header">
+                      <div class="post__header-left">
+                        <picture class="post__avatar">
+                          <source
+                            srcset="
+                              ./img/random-user@1x.avif 1x,
+                              ./img/random-user@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/random-user@1x.webp 1x,
+                              ./img/random-user@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__avatar-img"
+                            src="./img/random-user@1x.jpg"
+                            srcset="./img/random-user@2x.jpg 2x"
+                            alt="User avatar"
+                          />
+                        </picture>
+                        <div class="post__info">
+                          <h2 class="post__nickname">Чел с рандомным ником</h2>
+                          <p class="post__id">@kakyto_chel</p>
+                        </div>
+                      </div>
+                      <div class="post__header-right">
+                        <div class="post__menu">
+                          <button class="post__menu-btn">
+                            <svg class="post__menu-img">
+                              <use xlink:href="img/sprite.svg#points"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="post__create">
+                          <p class="post__create-text">
+                            <span class="post__create-day">Вчера</span>&nbsp;
+                            <span class="post__create-time">21:05</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container post__container--padding-mobile">
+                    <div class="post__content">
+                      <div class="post__content-wrapper">
+                        <div class="post__content-empty"></div>
+                        <picture class="post__content-picture">
+                          <source
+                            srcset="
+                              ./img/profile-avatar@1x.avif 1x,
+                              ./img/profile-avatar@2x.avif 2x
+                            "
+                            type="image/avif"
+                          />
+                          <source
+                            srcset="
+                              ./img/profile-avatar@1x.webp 1x,
+                              ./img/profile-avatar@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="post__content-img"
+                            src="./img/profile-avatar@1x.jpg"
+                            srcset="./img/profile-avatar@2x.jpg 2x"
+                            alt="Image description"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__actions">
+                      <div class="post__actions-like">
+                        <button
+                          class="post__actions-btn post__actions-btn--like"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--like"
+                          >
+                            <use xlink:href="img/sprite.svg#like-active"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="post__actions-share">
+                        <a
+                          class="post__actions-btn post__actions-btn--share"
+                          href="#"
+                        >
+                          <svg
+                            class="post__actions-img post__actions-img--share"
+                          >
+                            <use xlink:href="img/sprite.svg#share-right"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post__container">
+                    <div class="post__description">
+                      <div class="post__description-content">
+                        <div class="post__description-info">
+                          <p class="post__description-text">
+                            Привет всем! <br />Являясь всего лишь частью общей
+                            картины, действия представителей оппозиции лишь
+                            добавляют фракционных разногласий и объективно
+                            рассмотрены соответствующими инстанциями.
+                            <br />Прежде всего, новая модель организационной
+                            деятельности представляет собой интересный
+                            эксперимент проверки модели развития. Современные
+                            технологии достигли такого уровня, что граница
+                            обучения кадров представляет собой интересный
+                            эксперимент проверки кластеризации усилий.
+                          </p>
+                          <button
+                            class="post__description-btn post__description-btn--hide"
+                          >
+                            Свернуть
+                          </button>
+                        </div>
+                        <button
+                          class="post__description-btn post__description-btn--show"
+                        >
+                          Читать далее
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="user__subscribe">
-          <div class="user__subscribe-content">
-            <button
-              class="btn user__subscribe-btn btn--primary btn--subscribe btn--margin-right"
-            >
-              <div class="btn__picture">
-                <svg class="btn__img">
-                  <use xlink:href="img/sprite.svg#dollar"></use>
-                </svg>
-              </div>
-              <span class="btn__text">
-                Оформить&nbsp;подписку&nbsp;за&nbsp;
-              </span>
-              <span class="btn__count btn__count--price">59.99</span>
-            </button>
-            <button class="btn user__subscribe-btn btn--primary btn--share">
-              <div class="btn__picture">
-                <svg class="btn__img">
-                  <use xlink:href="img/sprite.svg#share"></use>
-                </svg>
-              </div>
-            </button>
-          </div>
-        </div>
-        <div class="user__about">
-          <div class="user__about-content">
-            <div class="user__about-info">
-              <p class="user__about-text">
-                Привет всем! <br />Являясь всего лишь частью общей картины,
-                действия представителей оппозиции лишь добавляют фракционных
-                разногласий и объективно рассмотрены соответствующими
-                инстанциями. <br />Прежде всего, новая модель организационной
-                деятельности представляет собой интересный эксперимент проверки
-                модели развития.
-              </p>
-              <button class="user__about-btn user__about-btn--hide">
-                Свернуть
-              </button>
-            </div>
-            <button class="user__about-btn user__about-btn--show">
-              Читать далее
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="profile__content">
-        <div class="profile__content-wrapper">
-          <h4 class="profile__content-title">Лента пользователя</h4>
-        </div>
-        <ul class="profile__content-list profile__content-list--tablet">
-          <li class="profile__content-item">
-            <div class="post profile__content-post">
-              <div class="post__container post__container--padding-right">
-                <div class="post__header">
-                  <div class="post__header-left">
-                    <picture class="post__avatar">
-                      <source
-                        srcset="
-                          ./img/random-user@1x.avif 1x,
-                          ./img/random-user@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/random-user@1x.webp 1x,
-                          ./img/random-user@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__avatar-img"
-                        src="./img/random-user@1x.jpg"
-                        srcset="./img/random-user@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                    <div class="post__info">
-                      <h2 class="post__nickname">Чел с рандомным ником</h2>
-                      <p class="post__id">@kakyto_chel</p>
-                    </div>
-                  </div>
-                  <div class="post__header-right">
-                    <div class="post__menu">
-                      <button class="post__menu-btn">
-                        <svg class="post__menu-img">
-                          <use xlink:href="img/sprite.svg#points"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="post__create">
-                      <p class="post__create-text">
-                        <span class="post__create-day">Вчера</span>&nbsp;
-                        <span class="post__create-time">21:05</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container post__container--padding-mobile">
-                <div class="post__content">
-                  <div class="post__content-wrapper">
-                    <div class="post__content-empty"></div>
-                    <picture class="post__content-picture">
-                      <source
-                        srcset="
-                          ./img/random-user@1x.avif 1x,
-                          ./img/random-user@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/random-user@1x.webp 1x,
-                          ./img/random-user@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__content-img"
-                        src="./img/random-user@1x.jpg"
-                        srcset="./img/random-user@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__actions">
-                  <div class="post__actions-like">
-                    <button
-                      class="post__actions-btn post__actions-btn--like post__actions-btn--active"
-                    >
-                      <svg class="post__actions-img post__actions-img--like">
-                        <use xlink:href="img/sprite.svg#like-inactive"></use>
-                      </svg>
-                      <svg
-                        class="post__actions-img post__actions-img--like post__actions-img--active"
-                      >
-                        <use xlink:href="img/sprite.svg#like-active"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="post__actions-share">
-                    <a
-                      class="post__actions-btn post__actions-btn--share"
-                      href="#"
-                    >
-                      <svg class="post__actions-img post__actions-img--share">
-                        <use xlink:href="img/sprite.svg#share-right"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__description">
-                  <div class="post__description-content">
-                    <div class="post__description-info">
-                      <p class="post__description-text">
-                        Привет всем! <br />Являясь всего лишь частью общей
-                        картины, действия представителей оппозиции лишь
-                        добавляют фракционных разногласий и объективно
-                        рассмотрены соответствующими инстанциями. <br />Прежде
-                        всего, новая модель организационной деятельности
-                        представляет собой интересный эксперимент проверки
-                        модели развития. Современные технологии достигли такого
-                        уровня, что граница обучения кадров представляет собой
-                        интересный эксперимент проверки кластеризации усилий.
-                      </p>
-                      <button
-                        class="post__description-btn post__description-btn--hide"
-                      >
-                        Свернуть
-                      </button>
-                    </div>
-                    <button
-                      class="post__description-btn post__description-btn--show"
-                    >
-                      Читать далее
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="profile__content-item">
-            <div class="post profile__content-post">
-              <div class="post__container post__container--padding-right">
-                <div class="post__header">
-                  <div class="post__header-left">
-                    <picture class="post__avatar">
-                      <source
-                        srcset="
-                          ./img/random-user@1x.avif 1x,
-                          ./img/random-user@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/random-user@1x.webp 1x,
-                          ./img/random-user@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__avatar-img"
-                        src="./img/random-user@1x.jpg"
-                        srcset="./img/random-user@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                    <div class="post__info">
-                      <h2 class="post__nickname">Чел с рандомным ником</h2>
-                      <p class="post__id">@kakyto_chel</p>
-                    </div>
-                  </div>
-                  <div class="post__header-right">
-                    <div class="post__menu">
-                      <button class="post__menu-btn">
-                        <svg class="post__menu-img">
-                          <use xlink:href="img/sprite.svg#points"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="post__create">
-                      <p class="post__create-text">
-                        <span class="post__create-day">Вчера</span>&nbsp;
-                        <span class="post__create-time">21:05</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container post__container--padding-mobile">
-                <div class="post__content">
-                  <div class="post__content-wrapper">
-                    <div class="post__content-empty"></div>
-                    <picture class="post__content-picture">
-                      <source
-                        srcset="
-                          ./img/random-user@1x.avif 1x,
-                          ./img/random-user@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/random-user@1x.webp 1x,
-                          ./img/random-user@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__content-img"
-                        src="./img/random-user@1x.jpg"
-                        srcset="./img/random-user@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__actions">
-                  <div class="post__actions-like">
-                    <button
-                      class="post__actions-btn post__actions-btn--like post__actions-btn--active"
-                    >
-                      <svg class="post__actions-img post__actions-img--like">
-                        <use xlink:href="img/sprite.svg#like-inactive"></use>
-                      </svg>
-                      <svg
-                        class="post__actions-img post__actions-img--like post__actions-img--active"
-                      >
-                        <use xlink:href="img/sprite.svg#like-active"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="post__actions-share">
-                    <a
-                      class="post__actions-btn post__actions-btn--share"
-                      href="#"
-                    >
-                      <svg class="post__actions-img post__actions-img--share">
-                        <use xlink:href="img/sprite.svg#share-right"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__description">
-                  <div class="post__description-content">
-                    <div class="post__description-info">
-                      <p class="post__description-text">
-                        Привет всем! <br />Являясь всего лишь частью общей
-                        картины, действия представителей оппозиции лишь
-                        добавляют фракционных разногласий и объективно
-                        рассмотрены соответствующими инстанциями. <br />Прежде
-                        всего, новая модель организационной деятельности
-                        представляет собой интересный эксперимент проверки
-                        модели развития. Современные технологии достигли такого
-                        уровня, что граница обучения кадров представляет собой
-                        интересный эксперимент проверки кластеризации усилий.
-                      </p>
-                      <button
-                        class="post__description-btn post__description-btn--hide"
-                      >
-                        Свернуть
-                      </button>
-                    </div>
-                    <button
-                      class="post__description-btn post__description-btn--show"
-                    >
-                      Читать далее
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <ul class="profile__content-list profile__content-list--desktop">
-          <li class="profile__content-item">
-            <div class="post profile__content-post">
-              <div class="post__container post__container--padding-right">
-                <div class="post__header">
-                  <div class="post__header-left">
-                    <picture class="post__avatar">
-                      <source
-                        srcset="
-                          ./img/random-user@1x.avif 1x,
-                          ./img/random-user@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/random-user@1x.webp 1x,
-                          ./img/random-user@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__avatar-img"
-                        src="./img/random-user@1x.jpg"
-                        srcset="./img/random-user@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                    <div class="post__info">
-                      <h2 class="post__nickname">Чел с рандомным ником</h2>
-                      <p class="post__id">@kakyto_chel</p>
-                    </div>
-                  </div>
-                  <div class="post__header-right">
-                    <div class="post__menu">
-                      <button class="post__menu-btn">
-                        <svg class="post__menu-img">
-                          <use xlink:href="img/sprite.svg#points"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="post__create">
-                      <p class="post__create-text">
-                        <span class="post__create-day">Вчера</span>&nbsp;
-                        <span class="post__create-time">21:05</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container post__container--padding-mobile">
-                <div class="post__content">
-                  <div class="post__content-wrapper">
-                    <div class="post__content-empty"></div>
-                    <picture class="post__content-picture">
-                      <source
-                        srcset="
-                          ./img/profile-avatar@1x.avif 1x,
-                          ./img/profile-avatar@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/profile-avatar@1x.webp 1x,
-                          ./img/profile-avatar@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__content-img"
-                        src="./img/profile-avatar@1x.jpg"
-                        srcset="./img/profile-avatar@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__actions">
-                  <div class="post__actions-like">
-                    <button
-                      class="post__actions-btn post__actions-btn--like post__actions-btn--active"
-                    >
-                      <svg class="post__actions-img post__actions-img--like">
-                        <use xlink:href="img/sprite.svg#like-inactive"></use>
-                      </svg>
-                      <svg
-                        class="post__actions-img post__actions-img--like post__actions-img--active"
-                      >
-                        <use xlink:href="img/sprite.svg#like-active"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="post__actions-share">
-                    <a
-                      class="post__actions-btn post__actions-btn--share"
-                      href="#"
-                    >
-                      <svg class="post__actions-img post__actions-img--share">
-                        <use xlink:href="img/sprite.svg#share-right"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__description">
-                  <div class="post__description-content">
-                    <div class="post__description-info">
-                      <p class="post__description-text">
-                        Привет всем! <br />Являясь всего лишь частью общей
-                        картины, действия представителей оппозиции лишь
-                        добавляют фракционных разногласий и объективно
-                        рассмотрены соответствующими инстанциями. <br />Прежде
-                        всего, новая модель организационной деятельности
-                        представляет собой интересный эксперимент проверки
-                        модели развития. Современные технологии достигли такого
-                        уровня, что граница обучения кадров представляет собой
-                        интересный эксперимент проверки кластеризации усилий.
-                      </p>
-                      <button
-                        class="post__description-btn post__description-btn--hide"
-                      >
-                        Свернуть
-                      </button>
-                    </div>
-                    <button
-                      class="post__description-btn post__description-btn--show"
-                    >
-                      Читать далее
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="profile__content-item">
-            <div class="post profile__content-post">
-              <div class="post__container post__container--padding-right">
-                <div class="post__header">
-                  <div class="post__header-left">
-                    <picture class="post__avatar">
-                      <source
-                        srcset="
-                          ./img/random-user@1x.avif 1x,
-                          ./img/random-user@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/random-user@1x.webp 1x,
-                          ./img/random-user@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__avatar-img"
-                        src="./img/random-user@1x.jpg"
-                        srcset="./img/random-user@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                    <div class="post__info">
-                      <h2 class="post__nickname">Чел с рандомным ником</h2>
-                      <p class="post__id">@kakyto_chel</p>
-                    </div>
-                  </div>
-                  <div class="post__header-right">
-                    <div class="post__menu">
-                      <button class="post__menu-btn">
-                        <svg class="post__menu-img">
-                          <use xlink:href="img/sprite.svg#points"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="post__create">
-                      <p class="post__create-text">
-                        <span class="post__create-day">Вчера</span>&nbsp;
-                        <span class="post__create-time">21:05</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container post__container--padding-mobile">
-                <div class="post__content">
-                  <div class="post__content-wrapper">
-                    <div class="post__content-empty"></div>
-                    <picture class="post__content-picture">
-                      <source
-                        srcset="
-                          ./img/profile-photo-01@1x.avif 1x,
-                          ./img/profile-photo-01@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/profile-photo-01@1x.webp 1x,
-                          ./img/profile-photo-01@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__content-img"
-                        src="./img/profile-photo-01@1x.jpg"
-                        srcset="./img/profile-photo-01@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__actions">
-                  <div class="post__actions-like">
-                    <button
-                      class="post__actions-btn post__actions-btn--like post__actions-btn--active"
-                    >
-                      <svg class="post__actions-img post__actions-img--like">
-                        <use xlink:href="img/sprite.svg#like-inactive"></use>
-                      </svg>
-                      <svg
-                        class="post__actions-img post__actions-img--like post__actions-img--active"
-                      >
-                        <use xlink:href="img/sprite.svg#like-active"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="post__actions-share">
-                    <a
-                      class="post__actions-btn post__actions-btn--share"
-                      href="#"
-                    >
-                      <svg class="post__actions-img post__actions-img--share">
-                        <use xlink:href="img/sprite.svg#share-right"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__description">
-                  <div class="post__description-content">
-                    <div class="post__description-info">
-                      <p class="post__description-text">
-                        Привет всем! <br />Являясь всего лишь частью общей
-                        картины, действия представителей оппозиции лишь
-                        добавляют фракционных разногласий и объективно
-                        рассмотрены соответствующими инстанциями. <br />Прежде
-                        всего, новая модель организационной деятельности
-                        представляет собой интересный эксперимент проверки
-                        модели развития. Современные технологии достигли такого
-                        уровня, что граница обучения кадров представляет собой
-                        интересный эксперимент проверки кластеризации усилий.
-                      </p>
-                      <button
-                        class="post__description-btn post__description-btn--hide"
-                      >
-                        Свернуть
-                      </button>
-                    </div>
-                    <button
-                      class="post__description-btn post__description-btn--show"
-                    >
-                      Читать далее
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="profile__content-item">
-            <div class="post profile__content-post">
-              <div class="post__container post__container--padding-right">
-                <div class="post__header">
-                  <div class="post__header-left">
-                    <picture class="post__avatar">
-                      <source
-                        srcset="
-                          ./img/random-user@1x.avif 1x,
-                          ./img/random-user@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/random-user@1x.webp 1x,
-                          ./img/random-user@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__avatar-img"
-                        src="./img/random-user@1x.jpg"
-                        srcset="./img/random-user@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                    <div class="post__info">
-                      <h2 class="post__nickname">Чел с рандомным ником</h2>
-                      <p class="post__id">@kakyto_chel</p>
-                    </div>
-                  </div>
-                  <div class="post__header-right">
-                    <div class="post__menu">
-                      <button class="post__menu-btn">
-                        <svg class="post__menu-img">
-                          <use xlink:href="img/sprite.svg#points"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="post__create">
-                      <p class="post__create-text">
-                        <span class="post__create-day">Вчера</span>&nbsp;
-                        <span class="post__create-time">21:05</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container post__container--padding-mobile">
-                <div class="post__content">
-                  <div class="post__content-wrapper">
-                    <div class="post__content-empty"></div>
-                    <picture class="post__content-picture">
-                      <source
-                        srcset="
-                          ./img/profile-photo-02@1x.avif 1x,
-                          ./img/profile-photo-02@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/profile-photo-02@1x.webp 1x,
-                          ./img/profile-photo-02@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__content-img"
-                        src="./img/profile-photo-02@1x.jpg"
-                        srcset="./img/profile-photo-02@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__actions">
-                  <div class="post__actions-like">
-                    <button
-                      class="post__actions-btn post__actions-btn--like post__actions-btn--active"
-                    >
-                      <svg class="post__actions-img post__actions-img--like">
-                        <use xlink:href="img/sprite.svg#like-inactive"></use>
-                      </svg>
-                      <svg
-                        class="post__actions-img post__actions-img--like post__actions-img--active"
-                      >
-                        <use xlink:href="img/sprite.svg#like-active"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="post__actions-share">
-                    <a
-                      class="post__actions-btn post__actions-btn--share"
-                      href="#"
-                    >
-                      <svg class="post__actions-img post__actions-img--share">
-                        <use xlink:href="img/sprite.svg#share-right"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__description">
-                  <div class="post__description-content">
-                    <div class="post__description-info">
-                      <p class="post__description-text">
-                        Привет всем! <br />Являясь всего лишь частью общей
-                        картины, действия представителей оппозиции лишь
-                        добавляют фракционных разногласий и объективно
-                        рассмотрены соответствующими инстанциями. <br />Прежде
-                        всего, новая модель организационной деятельности
-                        представляет собой интересный эксперимент проверки
-                        модели развития. Современные технологии достигли такого
-                        уровня, что граница обучения кадров представляет собой
-                        интересный эксперимент проверки кластеризации усилий.
-                      </p>
-                      <button
-                        class="post__description-btn post__description-btn--hide"
-                      >
-                        Свернуть
-                      </button>
-                    </div>
-                    <button
-                      class="post__description-btn post__description-btn--show"
-                    >
-                      Читать далее
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="profile__content-item">
-            <div class="post profile__content-post">
-              <div class="post__container post__container--padding-right">
-                <div class="post__header">
-                  <div class="post__header-left">
-                    <picture class="post__avatar">
-                      <source
-                        srcset="
-                          ./img/random-user@1x.avif 1x,
-                          ./img/random-user@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/random-user@1x.webp 1x,
-                          ./img/random-user@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__avatar-img"
-                        src="./img/random-user@1x.jpg"
-                        srcset="./img/random-user@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                    <div class="post__info">
-                      <h2 class="post__nickname">Чел с рандомным ником</h2>
-                      <p class="post__id">@kakyto_chel</p>
-                    </div>
-                  </div>
-                  <div class="post__header-right">
-                    <div class="post__menu">
-                      <button class="post__menu-btn">
-                        <svg class="post__menu-img">
-                          <use xlink:href="img/sprite.svg#points"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="post__create">
-                      <p class="post__create-text">
-                        <span class="post__create-day">Вчера</span>&nbsp;
-                        <span class="post__create-time">21:05</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container post__container--padding-mobile">
-                <div class="post__content">
-                  <div class="post__content-wrapper">
-                    <div class="post__content-empty"></div>
-                    <picture class="post__content-picture">
-                      <source
-                        srcset="
-                          ./img/profile-photo-03@1x.avif 1x,
-                          ./img/profile-photo-03@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/profile-photo-03@1x.webp 1x,
-                          ./img/profile-photo-03@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__content-img"
-                        src="./img/profile-photo-03@1x.jpg"
-                        srcset="./img/profile-photo-03@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__actions">
-                  <div class="post__actions-like">
-                    <button
-                      class="post__actions-btn post__actions-btn--like post__actions-btn--active"
-                    >
-                      <svg class="post__actions-img post__actions-img--like">
-                        <use xlink:href="img/sprite.svg#like-inactive"></use>
-                      </svg>
-                      <svg
-                        class="post__actions-img post__actions-img--like post__actions-img--active"
-                      >
-                        <use xlink:href="img/sprite.svg#like-active"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="post__actions-share">
-                    <a
-                      class="post__actions-btn post__actions-btn--share"
-                      href="#"
-                    >
-                      <svg class="post__actions-img post__actions-img--share">
-                        <use xlink:href="img/sprite.svg#share-right"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__description">
-                  <div class="post__description-content">
-                    <div class="post__description-info">
-                      <p class="post__description-text">
-                        Привет всем! <br />Являясь всего лишь частью общей
-                        картины, действия представителей оппозиции лишь
-                        добавляют фракционных разногласий и объективно
-                        рассмотрены соответствующими инстанциями. <br />Прежде
-                        всего, новая модель организационной деятельности
-                        представляет собой интересный эксперимент проверки
-                        модели развития. Современные технологии достигли такого
-                        уровня, что граница обучения кадров представляет собой
-                        интересный эксперимент проверки кластеризации усилий.
-                      </p>
-                      <button
-                        class="post__description-btn post__description-btn--hide"
-                      >
-                        Свернуть
-                      </button>
-                    </div>
-                    <button
-                      class="post__description-btn post__description-btn--show"
-                    >
-                      Читать далее
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="profile__content-item">
-            <div class="post profile__content-post">
-              <div class="post__container post__container--padding-right">
-                <div class="post__header">
-                  <div class="post__header-left">
-                    <picture class="post__avatar">
-                      <source
-                        srcset="
-                          ./img/random-user@1x.avif 1x,
-                          ./img/random-user@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/random-user@1x.webp 1x,
-                          ./img/random-user@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__avatar-img"
-                        src="./img/random-user@1x.jpg"
-                        srcset="./img/random-user@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                    <div class="post__info">
-                      <h2 class="post__nickname">Чел с рандомным ником</h2>
-                      <p class="post__id">@kakyto_chel</p>
-                    </div>
-                  </div>
-                  <div class="post__header-right">
-                    <div class="post__menu">
-                      <button class="post__menu-btn">
-                        <svg class="post__menu-img">
-                          <use xlink:href="img/sprite.svg#points"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="post__create">
-                      <p class="post__create-text">
-                        <span class="post__create-day">Вчера</span>&nbsp;
-                        <span class="post__create-time">21:05</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container post__container--padding-mobile">
-                <div class="post__content">
-                  <div class="post__content-wrapper">
-                    <div class="post__content-empty"></div>
-                    <picture class="post__content-picture">
-                      <source
-                        srcset="
-                          ./img/profile-photo-04@1x.avif 1x,
-                          ./img/profile-photo-04@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/profile-photo-04@1x.webp 1x,
-                          ./img/profile-photo-04@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__content-img"
-                        src="./img/profile-photo-04@1x.jpg"
-                        srcset="./img/profile-photo-04@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__actions">
-                  <div class="post__actions-like">
-                    <button
-                      class="post__actions-btn post__actions-btn--like post__actions-btn--active"
-                    >
-                      <svg class="post__actions-img post__actions-img--like">
-                        <use xlink:href="img/sprite.svg#like-inactive"></use>
-                      </svg>
-                      <svg
-                        class="post__actions-img post__actions-img--like post__actions-img--active"
-                      >
-                        <use xlink:href="img/sprite.svg#like-active"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="post__actions-share">
-                    <a
-                      class="post__actions-btn post__actions-btn--share"
-                      href="#"
-                    >
-                      <svg class="post__actions-img post__actions-img--share">
-                        <use xlink:href="img/sprite.svg#share-right"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__description">
-                  <div class="post__description-content">
-                    <div class="post__description-info">
-                      <p class="post__description-text">
-                        Привет всем! <br />Являясь всего лишь частью общей
-                        картины, действия представителей оппозиции лишь
-                        добавляют фракционных разногласий и объективно
-                        рассмотрены соответствующими инстанциями. <br />Прежде
-                        всего, новая модель организационной деятельности
-                        представляет собой интересный эксперимент проверки
-                        модели развития. Современные технологии достигли такого
-                        уровня, что граница обучения кадров представляет собой
-                        интересный эксперимент проверки кластеризации усилий.
-                      </p>
-                      <button
-                        class="post__description-btn post__description-btn--hide"
-                      >
-                        Свернуть
-                      </button>
-                    </div>
-                    <button
-                      class="post__description-btn post__description-btn--show"
-                    >
-                      Читать далее
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="profile__content-item">
-            <div class="post profile__content-post">
-              <div class="post__container post__container--padding-right">
-                <div class="post__header">
-                  <div class="post__header-left">
-                    <picture class="post__avatar">
-                      <source
-                        srcset="
-                          ./img/random-user@1x.avif 1x,
-                          ./img/random-user@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/random-user@1x.webp 1x,
-                          ./img/random-user@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__avatar-img"
-                        src="./img/random-user@1x.jpg"
-                        srcset="./img/random-user@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                    <div class="post__info">
-                      <h2 class="post__nickname">Чел с рандомным ником</h2>
-                      <p class="post__id">@kakyto_chel</p>
-                    </div>
-                  </div>
-                  <div class="post__header-right">
-                    <div class="post__menu">
-                      <button class="post__menu-btn">
-                        <svg class="post__menu-img">
-                          <use xlink:href="img/sprite.svg#points"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="post__create">
-                      <p class="post__create-text">
-                        <span class="post__create-day">Вчера</span>&nbsp;
-                        <span class="post__create-time">21:05</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container post__container--padding-mobile">
-                <div class="post__content">
-                  <div class="post__content-wrapper">
-                    <div class="post__content-empty"></div>
-                    <picture class="post__content-picture">
-                      <source
-                        srcset="
-                          ./img/profile-photo-05@1x.avif 1x,
-                          ./img/profile-photo-05@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/profile-photo-05@1x.webp 1x,
-                          ./img/profile-photo-05@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__content-img"
-                        src="./img/profile-photo-05@1x.jpg"
-                        srcset="./img/profile-photo-05@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__actions">
-                  <div class="post__actions-like">
-                    <button
-                      class="post__actions-btn post__actions-btn--like post__actions-btn--active"
-                    >
-                      <svg class="post__actions-img post__actions-img--like">
-                        <use xlink:href="img/sprite.svg#like-inactive"></use>
-                      </svg>
-                      <svg
-                        class="post__actions-img post__actions-img--like post__actions-img--active"
-                      >
-                        <use xlink:href="img/sprite.svg#like-active"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="post__actions-share">
-                    <a
-                      class="post__actions-btn post__actions-btn--share"
-                      href="#"
-                    >
-                      <svg class="post__actions-img post__actions-img--share">
-                        <use xlink:href="img/sprite.svg#share-right"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__description">
-                  <div class="post__description-content">
-                    <div class="post__description-info">
-                      <p class="post__description-text">
-                        Привет всем! <br />Являясь всего лишь частью общей
-                        картины, действия представителей оппозиции лишь
-                        добавляют фракционных разногласий и объективно
-                        рассмотрены соответствующими инстанциями. <br />Прежде
-                        всего, новая модель организационной деятельности
-                        представляет собой интересный эксперимент проверки
-                        модели развития. Современные технологии достигли такого
-                        уровня, что граница обучения кадров представляет собой
-                        интересный эксперимент проверки кластеризации усилий.
-                      </p>
-                      <button
-                        class="post__description-btn post__description-btn--hide"
-                      >
-                        Свернуть
-                      </button>
-                    </div>
-                    <button
-                      class="post__description-btn post__description-btn--show"
-                    >
-                      Читать далее
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="profile__content-item">
-            <div class="post profile__content-post">
-              <div class="post__container post__container--padding-right">
-                <div class="post__header">
-                  <div class="post__header-left">
-                    <picture class="post__avatar">
-                      <source
-                        srcset="
-                          ./img/random-user@1x.avif 1x,
-                          ./img/random-user@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/random-user@1x.webp 1x,
-                          ./img/random-user@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__avatar-img"
-                        src="./img/random-user@1x.jpg"
-                        srcset="./img/random-user@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                    <div class="post__info">
-                      <h2 class="post__nickname">Чел с рандомным ником</h2>
-                      <p class="post__id">@kakyto_chel</p>
-                    </div>
-                  </div>
-                  <div class="post__header-right">
-                    <div class="post__menu">
-                      <button class="post__menu-btn">
-                        <svg class="post__menu-img">
-                          <use xlink:href="img/sprite.svg#points"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="post__create">
-                      <p class="post__create-text">
-                        <span class="post__create-day">Вчера</span>&nbsp;
-                        <span class="post__create-time">21:05</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container post__container--padding-mobile">
-                <div class="post__content">
-                  <div class="post__content-wrapper">
-                    <div class="post__content-empty"></div>
-                    <picture class="post__content-picture">
-                      <source
-                        srcset="
-                          ./img/profile-photo-06@1x.avif 1x,
-                          ./img/profile-photo-06@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/profile-photo-06@1x.webp 1x,
-                          ./img/profile-photo-06@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__content-img"
-                        src="./img/profile-photo-06@1x.jpg"
-                        srcset="./img/profile-photo-06@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__actions">
-                  <div class="post__actions-like">
-                    <button
-                      class="post__actions-btn post__actions-btn--like post__actions-btn--active"
-                    >
-                      <svg class="post__actions-img post__actions-img--like">
-                        <use xlink:href="img/sprite.svg#like-inactive"></use>
-                      </svg>
-                      <svg
-                        class="post__actions-img post__actions-img--like post__actions-img--active"
-                      >
-                        <use xlink:href="img/sprite.svg#like-active"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="post__actions-share">
-                    <a
-                      class="post__actions-btn post__actions-btn--share"
-                      href="#"
-                    >
-                      <svg class="post__actions-img post__actions-img--share">
-                        <use xlink:href="img/sprite.svg#share-right"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__description">
-                  <div class="post__description-content">
-                    <div class="post__description-info">
-                      <p class="post__description-text">
-                        Привет всем! <br />Являясь всего лишь частью общей
-                        картины, действия представителей оппозиции лишь
-                        добавляют фракционных разногласий и объективно
-                        рассмотрены соответствующими инстанциями. <br />Прежде
-                        всего, новая модель организационной деятельности
-                        представляет собой интересный эксперимент проверки
-                        модели развития. Современные технологии достигли такого
-                        уровня, что граница обучения кадров представляет собой
-                        интересный эксперимент проверки кластеризации усилий.
-                      </p>
-                      <button
-                        class="post__description-btn post__description-btn--hide"
-                      >
-                        Свернуть
-                      </button>
-                    </div>
-                    <button
-                      class="post__description-btn post__description-btn--show"
-                    >
-                      Читать далее
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="profile__content-item">
-            <div class="post profile__content-post">
-              <div class="post__container post__container--padding-right">
-                <div class="post__header">
-                  <div class="post__header-left">
-                    <picture class="post__avatar">
-                      <source
-                        srcset="
-                          ./img/random-user@1x.avif 1x,
-                          ./img/random-user@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/random-user@1x.webp 1x,
-                          ./img/random-user@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__avatar-img"
-                        src="./img/random-user@1x.jpg"
-                        srcset="./img/random-user@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                    <div class="post__info">
-                      <h2 class="post__nickname">Чел с рандомным ником</h2>
-                      <p class="post__id">@kakyto_chel</p>
-                    </div>
-                  </div>
-                  <div class="post__header-right">
-                    <div class="post__menu">
-                      <button class="post__menu-btn">
-                        <svg class="post__menu-img">
-                          <use xlink:href="img/sprite.svg#points"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="post__create">
-                      <p class="post__create-text">
-                        <span class="post__create-day">Вчера</span>&nbsp;
-                        <span class="post__create-time">21:05</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container post__container--padding-mobile">
-                <div class="post__content">
-                  <div class="post__content-wrapper">
-                    <div class="post__content-empty"></div>
-                    <picture class="post__content-picture">
-                      <source
-                        srcset="
-                          ./img/profile-photo-07@1x.avif 1x,
-                          ./img/profile-photo-07@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/profile-photo-07@1x.webp 1x,
-                          ./img/profile-photo-07@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__content-img"
-                        src="./img/profile-photo-07@1x.jpg"
-                        srcset="./img/profile-photo-07@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__actions">
-                  <div class="post__actions-like">
-                    <button
-                      class="post__actions-btn post__actions-btn--like post__actions-btn--active"
-                    >
-                      <svg class="post__actions-img post__actions-img--like">
-                        <use xlink:href="img/sprite.svg#like-inactive"></use>
-                      </svg>
-                      <svg
-                        class="post__actions-img post__actions-img--like post__actions-img--active"
-                      >
-                        <use xlink:href="img/sprite.svg#like-active"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="post__actions-share">
-                    <a
-                      class="post__actions-btn post__actions-btn--share"
-                      href="#"
-                    >
-                      <svg class="post__actions-img post__actions-img--share">
-                        <use xlink:href="img/sprite.svg#share-right"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__description">
-                  <div class="post__description-content">
-                    <div class="post__description-info">
-                      <p class="post__description-text">
-                        Привет всем! <br />Являясь всего лишь частью общей
-                        картины, действия представителей оппозиции лишь
-                        добавляют фракционных разногласий и объективно
-                        рассмотрены соответствующими инстанциями. <br />Прежде
-                        всего, новая модель организационной деятельности
-                        представляет собой интересный эксперимент проверки
-                        модели развития. Современные технологии достигли такого
-                        уровня, что граница обучения кадров представляет собой
-                        интересный эксперимент проверки кластеризации усилий.
-                      </p>
-                      <button
-                        class="post__description-btn post__description-btn--hide"
-                      >
-                        Свернуть
-                      </button>
-                    </div>
-                    <button
-                      class="post__description-btn post__description-btn--show"
-                    >
-                      Читать далее
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="profile__content-item">
-            <div class="post profile__content-post">
-              <div class="post__container post__container--padding-right">
-                <div class="post__header">
-                  <div class="post__header-left">
-                    <picture class="post__avatar">
-                      <source
-                        srcset="
-                          ./img/random-user@1x.avif 1x,
-                          ./img/random-user@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/random-user@1x.webp 1x,
-                          ./img/random-user@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__avatar-img"
-                        src="./img/random-user@1x.jpg"
-                        srcset="./img/random-user@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                    <div class="post__info">
-                      <h2 class="post__nickname">Чел с рандомным ником</h2>
-                      <p class="post__id">@kakyto_chel</p>
-                    </div>
-                  </div>
-                  <div class="post__header-right">
-                    <div class="post__menu">
-                      <button class="post__menu-btn">
-                        <svg class="post__menu-img">
-                          <use xlink:href="img/sprite.svg#points"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="post__create">
-                      <p class="post__create-text">
-                        <span class="post__create-day">Вчера</span>&nbsp;
-                        <span class="post__create-time">21:05</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container post__container--padding-mobile">
-                <div class="post__content">
-                  <div class="post__content-wrapper">
-                    <div class="post__content-empty"></div>
-                    <picture class="post__content-picture">
-                      <source
-                        srcset="
-                          ./img/profile-avatar@1x.avif 1x,
-                          ./img/profile-avatar@2x.avif 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./img/profile-avatar@1x.webp 1x,
-                          ./img/profile-avatar@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="post__content-img"
-                        src="./img/profile-avatar@1x.jpg"
-                        srcset="./img/profile-avatar@2x.jpg 2x"
-                        alt="User avatar"
-                      />
-                    </picture>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__actions">
-                  <div class="post__actions-like">
-                    <button
-                      class="post__actions-btn post__actions-btn--like post__actions-btn--active"
-                    >
-                      <svg class="post__actions-img post__actions-img--like">
-                        <use xlink:href="img/sprite.svg#like-inactive"></use>
-                      </svg>
-                      <svg
-                        class="post__actions-img post__actions-img--like post__actions-img--active"
-                      >
-                        <use xlink:href="img/sprite.svg#like-active"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="post__actions-share">
-                    <a
-                      class="post__actions-btn post__actions-btn--share"
-                      href="#"
-                    >
-                      <svg class="post__actions-img post__actions-img--share">
-                        <use xlink:href="img/sprite.svg#share-right"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="post__container">
-                <div class="post__description">
-                  <div class="post__description-content">
-                    <div class="post__description-info">
-                      <p class="post__description-text">
-                        Привет всем! <br />Являясь всего лишь частью общей
-                        картины, действия представителей оппозиции лишь
-                        добавляют фракционных разногласий и объективно
-                        рассмотрены соответствующими инстанциями. <br />Прежде
-                        всего, новая модель организационной деятельности
-                        представляет собой интересный эксперимент проверки
-                        модели развития. Современные технологии достигли такого
-                        уровня, что граница обучения кадров представляет собой
-                        интересный эксперимент проверки кластеризации усилий.
-                      </p>
-                      <button
-                        class="post__description-btn post__description-btn--hide"
-                      >
-                        Свернуть
-                      </button>
-                    </div>
-                    <button
-                      class="post__description-btn post__description-btn--show"
-                    >
-                      Читать далее
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
       </div>
     </div>
     <script src="js/script.js"></script>
