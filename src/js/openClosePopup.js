@@ -1,4 +1,17 @@
 function openClosePopup(popupClassName) {
+  const imgTemplate = (filename, altText) => {
+    const template = `
+      <source srcset="./img/${filename}@1x.avif 1x, ./img/${filename}@2x.avif 2x "type="image/avif" />
+      <source srcset="./img/${filename}@1x.webp 1x, ./img/${filename}@2x.webp 2x" type="image/webp" />
+      <img
+        class="post__content-img"
+        src="./img/${filename}@1x.jpg"
+        srcset="./img/${filename}@2x.jpg 2x"
+        alt="${altText}"
+      />
+    `;
+    return template;
+  };
   const popup = document.querySelector(`.${popupClassName}`);
   const popupWrapper = popup.querySelector(`.${popupClassName}__wrapper`);
   const postTemplate = document.querySelector('.post.post--template');
@@ -25,11 +38,14 @@ function openClosePopup(popupClassName) {
   posts.forEach((post) => {
     post.addEventListener('click', () => {
       if (postTemplate) {
-        const postImg = post.querySelector('.post__content-img');
-        const postTemplateImg =
-          postTemplate.querySelector('.post__content-img');
-        console.log(postTemplateImg);
-        console.log(postImg.currentSrc);
+        const img = post.querySelector('.post__content-img');
+        const imgSrc = img.currentSrc;
+        const imgAltText = img.getAttribute('alt');
+        const templatePicture = postTemplate.querySelector(
+          '.post__content-picture'
+        );
+        const filename = imgSrc.split('/').pop().split('@')[0];
+        templatePicture.innerHTML = imgTemplate(filename, imgAltText);
       }
       openPopupHandler();
     });
