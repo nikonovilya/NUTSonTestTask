@@ -144,4 +144,26 @@
       />
     </g>
   </symbol>
+  <symbol id="arrow-prev" viewBox="0 0 34 34">
+    <path
+      d="M15 33L1 17L15 0.999999M33 17L1 17L33 17Z"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </symbol>
+  <symbol id="arrow-next" viewBox="0 0 34 34">
+    <path
+      d="M19 0.999999L33 17L19 33M0.999998 17L33 17L0.999998 17Z"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </symbol>
+  <symbol id="play-video" viewBox="0 0 54 54">
+    <rect width="54" height="54" rx="27" fill="#0D0D0D" fill-opacity="0.7" />
+    <path
+      d="M39.1103 26.8679L17.344 14.2409V39.4949L39.1103 26.8679ZM42.0805 24.2577C42.5402 24.521 42.9223 24.901 43.1881 25.3593C43.4538 25.8177 43.5938 26.3381 43.5938 26.8679C43.5938 27.3977 43.4538 27.9181 43.1881 28.3765C42.9223 28.8348 42.5402 29.2148 42.0805 29.4781L18.2178 43.3239C16.2677 44.4565 13.5938 43.1626 13.5938 40.7137V13.0221C13.5938 10.5732 16.2677 9.27933 18.2178 10.4119L42.0805 24.2577Z"
+    />
+  </symbol>
 </svg>

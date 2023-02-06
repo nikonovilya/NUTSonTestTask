@@ -1,6 +1,7 @@
 function openClosePopup(popupClassName) {
   const popup = document.querySelector(`.${popupClassName}`);
-  const popupOverlay = popup.querySelector(`.${popupClassName}__overlay`);
+  const popupWrapper = popup.querySelector(`.${popupClassName}__wrapper`);
+  const postTemplate = document.querySelector('.post.post--template');
 
   const body = document.querySelector('body');
   const postList = document.querySelector(
@@ -12,14 +13,27 @@ function openClosePopup(popupClassName) {
     popup.classList.add(`${popupClassName}--active`);
     body.classList.add('overflow-hidden');
   };
-  const closePopupHandler = () => {
-    popup.classList.remove(`${popupClassName}--active`);
-    body.classList.remove('overflow-hidden');
+  const closePopupHandler = (e) => {
+    const isSliderElem = e.target.closest('.slider');
+
+    if (!isSliderElem) {
+      popup.classList.remove(`${popupClassName}--active`);
+      body.classList.remove('overflow-hidden');
+    }
   };
 
   posts.forEach((post) => {
-    post.addEventListener('click', openPopupHandler);
+    post.addEventListener('click', () => {
+      if (postTemplate) {
+        const postImg = post.querySelector('.post__content-img');
+        const postTemplateImg =
+          postTemplate.querySelector('.post__content-img');
+        console.log(postTemplateImg);
+        console.log(postImg.currentSrc);
+      }
+      openPopupHandler();
+    });
   });
-  popupOverlay.addEventListener('click', closePopupHandler);
+  popupWrapper.addEventListener('click', closePopupHandler);
 }
 openClosePopup('popup');

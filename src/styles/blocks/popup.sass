@@ -6,14 +6,29 @@
   display: none
   width: 100vw
   height: 100vh
+  background: rgba(28, 26, 26, 0.7)
+  backdrop-filter: blur(10px)
+  overflow-y: scroll
+  overflow-x: hidden
   &.popup--active
     display: block
 
+  &__container
+    width: 638px
+    max-width: 638px
+    padding: 0 15px
+
+  &__wrapper
+    position: relative
+    z-index: 2
+    display: flex
+    justify-content: center
+    padding: 124px 0
+
   &__overlay
-    position: absolute
+    position: fixed
     top: 0
     left: 0
     right: 0
     bottom: 0
-    background: rgba(28, 26, 26, 0.7)
-    backdrop-filter: blur(10px)
+    z-index: 1

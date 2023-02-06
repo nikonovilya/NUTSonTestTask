@@ -1777,8 +1777,152 @@
     </div>
     <div class="popup">
       <div class="popup__wrapper">
-        <div class="slider popup__content">
-
+        <div class="popup__container">
+          <div class="slider popup__content">
+            <div class="post slider__post post--template">
+              <div class="post__container">
+                <div class="post__header">
+                  <div class="post__header-left">
+                    <picture class="post__avatar">
+                      <source
+                        srcset="
+                          ./img/random-user@1x.avif 1x,
+                          ./img/random-user@2x.avif 2x
+                        "
+                        type="image/avif"
+                      />
+                      <source
+                        srcset="
+                          ./img/random-user@1x.webp 1x,
+                          ./img/random-user@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        class="post__avatar-img"
+                        src="./img/random-user@1x.jpg"
+                        srcset="./img/random-user@2x.jpg 2x"
+                        alt="Image description"
+                      />
+                    </picture>
+                    <div class="post__info">
+                      <h2 class="post__nickname">Чел с рандомным ником</h2>
+                      <p class="post__id">@kakyto_chel</p>
+                    </div>
+                  </div>
+                  <div class="post__header-right">
+                    <div class="post__menu">
+                      <button class="post__menu-btn">
+                        <svg class="post__menu-img">
+                          <use xlink:href="img/sprite.svg#points"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="post__create">
+                      <p class="post__create-text">
+                        <span class="post__create-day">Вчера</span>&nbsp;
+                        <span class="post__create-time">21:05</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="post__container">
+                <div class="post__content">
+                  <div class="post__content-wrapper">
+                    <div class="post__content-empty"></div>
+                    <picture class="post__content-picture">
+                      <source
+                        srcset="
+                          ./img/random-user@1x.avif 1x,
+                          ./img/random-user@2x.avif 2x
+                        "
+                        type="image/avif"
+                      />
+                      <source
+                        srcset="
+                          ./img/random-user@1x.webp 1x,
+                          ./img/random-user@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        class="post__content-img"
+                        src="./img/random-user@1x.jpg"
+                        srcset="./img/random-user@2x.jpg 2x"
+                        alt="Image description"
+                      />
+                    </picture>
+                    <button class="post__play">
+                      <svg class="post__play-img">
+                        <use xlink:href="img/sprite.svg#play-video"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="post__container">
+                <div class="post__actions">
+                  <div class="post__actions-like">
+                    <button class="post__actions-btn post__actions-btn--like">
+                      <svg class="post__actions-img post__actions-img--like">
+                        <use xlink:href="img/sprite.svg#like-active"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="post__actions-share">
+                    <a
+                      class="post__actions-btn post__actions-btn--share"
+                      href="#"
+                    >
+                      <svg class="post__actions-img post__actions-img--share">
+                        <use xlink:href="img/sprite.svg#share-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="post__container">
+                <div class="post__description post__description--block">
+                  <div class="post__description-content">
+                    <div class="post__description-info">
+                      <p class="post__description-text">
+                        Привет всем! <br />Являясь всего лишь частью общей
+                        картины, действия представителей оппозиции лишь
+                        добавляют фракционных разногласий и объективно
+                        рассмотрены соответствующими инстанциями. <br />Прежде
+                        всего, новая модель организационной деятельности
+                        представляет собой интересный эксперимент проверки
+                        модели развития. Современные технологии достигли такого
+                        уровня, что граница обучения кадров представляет собой
+                        интересный эксперимент проверки кластеризации усилий.
+                      </p>
+                      <button
+                        class="post__description-btn post__description-btn--hide"
+                      >
+                        Свернуть
+                      </button>
+                    </div>
+                    <button
+                      class="post__description-btn post__description-btn--show"
+                    >
+                      Читать далее
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="slider__btn slider__btn--prev">
+              <svg class="slider__btn-img">
+                <use xlink:href="img/sprite.svg#arrow-prev"></use>
+              </svg>
+            </button>
+            <button class="slider__btn slider__btn--next">
+              <svg class="slider__btn-img">
+                <use xlink:href="img/sprite.svg#arrow-next"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
       <div class="popup__overlay"></div>
