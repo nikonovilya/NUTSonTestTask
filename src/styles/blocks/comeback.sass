@@ -1,0 +1,41 @@
+@import '../overall/variables'
+
+.comeback
+  display: none
+  margin-top: 60px
+
+  &__container
+    max-width: 1008px
+    padding: 0 15px
+    margin: 0 auto
+
+  &__wrapper
+    display: flex
+    justify-content: flex-start
+
+  &__link
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    max-width: 380px
+
+  &__picture
+    width: 20px
+    height: 20px
+    fill: $color-text-optional
+    margin-right: 16px
+
+  &__img
+    display: block
+    width: 100%
+    height: 100%
+
+  &__text
+    font-size: 28px
+    font-weight: 700
+    line-height: 39px
+    color: $color-text-optional
+
+@media screen and (min-width: 1200px)
+  .comeback
+    display: block
